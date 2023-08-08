@@ -23,8 +23,8 @@ let package = Package(
             name: "SwiftLintPlugin",
             capability: .buildTool(),
             dependencies: [
-                .target(name: "SwiftLintBinary", condition: .when(platforms: [.macOS])),
-                .target(name: "swiftlint", condition: .when(platforms: [.linux]))
+                // .target(name: "SwiftLintBinary", condition: .when(platforms: [.macOS])),
+                .target(name: "swiftlint", condition: .when(platforms: [.macOS]))
             ]
         ),
         .executableTarget(
